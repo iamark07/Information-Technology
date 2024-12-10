@@ -38,8 +38,6 @@
                     <a href="technology.html" class="hover:text-gray-300 text-lg poppins-regular">Technology</a>
                     <a href="contact.html" class="hover:text-gray-300 text-lg poppins-regular">Contact</a>
                 </nav>
-
-
             </div>
 
             <!-- Mobile Menu -->
@@ -49,11 +47,15 @@
                     <!-- Logo -->
                     <div class="text-2xl poppins-regular"><a href="index.html">My Logo</a></div>
                     <ul class="!mt-10 flex flex-col gap-3">
-                        <li><a href="#" class="block hover:text-gray-300 text-lg poppins-regular">Home</a></li>
-                        <li><a href="#" class="block hover:text-gray-300 text-lg poppins-regular">Services</a></li>
-                        <li><a href="#" class="block hover:text-gray-300 text-lg poppins-regular">About</a></li>
-                        <li><a href="#" class="block hover:text-gray-300 text-lg poppins-regular">Portfolio</a></li>
-                        <li><a href="#" class="block hover:text-gray-300 text-lg poppins-regular">Contact</a></li>
+                        <li><a href="index.html" class="block hover:text-gray-300 text-lg poppins-regular">Home</a></li>
+                        <li><a href="about.html" class="block hover:text-gray-300 text-lg poppins-regular">Services</a>
+                        </li>
+                        <li><a href="service.html" class="block hover:text-gray-300 text-lg poppins-regular">About</a>
+                        </li>
+                        <li><a href="technology.html"
+                                class="block hover:text-gray-300 text-lg poppins-regular">Portfolio</a></li>
+                        <li><a href="contact.html" class="block hover:text-gray-300 text-lg poppins-regular">Contact</a>
+                        </li>
                     </ul>
                     <a href="https://www.linkedin.com" target="_blank"
                         class="inline-block hover:text-gray-300 absolute bottom-5"><i
@@ -69,25 +71,44 @@
             <video src="assets/video/bg-video.mp4" loop autoplay muted
                 class="-z-10 absolute top-0 left-0 w-full h-[100dvh] object-cover">
             </video>
-            <div class="hero_section_content relative w-full h-[100dvh] flex flex-col items-center justify-center px-3" data-aos="fade-left">
+            <div class="hero_section_content relative w-full h-[100dvh] flex flex-col items-center justify-center px-3"
+                data-aos="fade-left">
                 <h1 class="text-white text-5xl sm:text-6xl md:text-7xl poppins-regular text-center">Information
                     <br><span class="text-3xl sm:text-4xl md:text-5xl ">Technology</span>
                 </h1>
                 <p class="text-center text-white text-lg mt-5 poppins-regular">We help great companies simplify business
                     by providing path-breaking solutions</p>
-                </div>
-                <!-- External Links -->
-                <div class="absolute z-10 bottom-5 left-10 flex gap-5">
-                    <a href="https://www.linkedin.com" target="_blank" class="hover:text-gray-300"><i
-                            class="ri-linkedin-box-fill text-white text-4xl"></i></a>
-                </div>
+                <button><a href="service.html"
+                        class="mt-5 px-10 py-3 font-semibold border-white border-2 text-white inline-block hover:bg-white hover:text-black transition-all duration-300 poppins-regular">Get
+                        Start</a></button>
+            </div>
+            <!-- External Links -->
+            <div class="absolute z-10 bottom-5 left-6 lg:left-10 flex gap-5">
+                <a href="https://www.linkedin.com" target="_blank" class="hover:text-gray-300"><i
+                        class="ri-linkedin-box-fill text-white text-4xl"></i>
+                </a>
+            </div>
 
         </section>
 
         <!-- about section -->
-         <section class="about_section">
-            
-         </section>
+        <section class="about_section my-24 px-5 md:px-20">
+            <h2 class="text-center poppins-regular text-4xl">About Us</h2>
+            <p class="poppins-regular text-center mt-3 md:text-lg font-semibold">"Innovating Technology, Empowering Success"</p>
+            <div class="grid grid-cols-2 mt-5 gap-7">
+                <!-- <div class="col-span-2 md:col-span-1">
+                    <img src="assets/img/about_us.jpg" class="w-full object-cover h-full" alt="About img loading error">
+                </div> -->
+                <div class="col-span-2 flex flex-col items-center">
+                    <p class="md:text-lg text-center">At [Company Name], we specialize in delivering innovative IT solutions that transform businesses and drive growth. Our mission is to empower organizations with cutting-edge technology, seamless digital experiences, and reliable support, enabling them to achieve their goals with confidence in an ever-evolving digital world.
+                    </p>
+                    <button>
+                        <a href="about.html"
+                        class="mt-5 px-10 py-3 border-black border text-black inline-block hover:bg-black hover:text-white transition-all duration-300 poppins-regular">Know More</a>
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="assets/js/script.js"></script>
