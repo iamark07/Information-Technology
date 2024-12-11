@@ -17,11 +17,16 @@
     <!-- rimix icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- Include Owl Carousel CSS -->
+    <!-- owl caraousel cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <title>Information Technology</title>
@@ -31,10 +36,10 @@
 
     <main class="w-full ">
         <!-- Header Section -->
-        <header class="absolute top-0 left-0 z-50 bg-none text-white py-3 px-4 lg:px-5 w-full">
-            <div class="flex items-center justify-between py-3 w-full">
+        <header class="absolute top-0 left-0 z-50 bg-none text-white py-3 px-5 lg:px-5 w-full">
+            <div class="flex justify-between py-3 w-full">
                 <!-- Logo -->
-                <div class="text-3xl poppins-regular"><a href="index.html">My Logo</a></div>
+                <div class="text-3xl poppins-regular"><a href="index.html"><img src="assets/img/Aiims-Logo__3.png" alt="" class="w-32 md:w-44 lg:w-52"></a></div>
 
                 <!-- Menu Button (For Mobile) -->
                 <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
@@ -42,7 +47,7 @@
                 </button>
 
                 <!-- Navigation Links -->
-                <nav id="menu" class="hidden lg:flex gap-8">
+                <nav id="menu" class="hidden lg:flex gap-8 mt-3">
                     <a href="index.html" class="hover:text-gray-300 text-lg poppins-regular">Home</a>
                     <a href="about.html" class="hover:text-gray-300 text-lg poppins-regular">About</a>
                     <a href="service.html" class="hover:text-gray-300 text-lg poppins-regular">Services</a>
@@ -56,7 +61,7 @@
                 class="lg:hidden absolute top-0 -left-full h-[100dvh] w-full flex transition-all duration-300">
                 <nav class="py-4 px-7 h-full w-3/5 bg-gray-800 relative">
                     <!-- Logo -->
-                    <div class="text-2xl poppins-regular"><a href="index.html">My Logo</a></div>
+                    <div class="text-2xl poppins-regular"><a href="index.html"><img src="assets/img/Aiims-Logo__3.png" alt="" class="w-32"></a></div>
                     <ul class="!mt-10 flex flex-col gap-3">
                         <li><a href="index.html" class="block hover:text-gray-300 text-lg poppins-regular">Home</a></li>
                         <li><a href="about.html" class="block hover:text-gray-300 text-lg poppins-regular">Services</a>
@@ -132,7 +137,7 @@
                         About Us
                     </h2>
                     <p class="text-gray-600 text-lg mb-6 poppins-regular">
-                        At <span class="text-indigo-600 font-bold">[Company Name]</span>, we specialize in transforming
+                        At <span class="text-indigo-500 font-bold">[Company Name]</span>, we specialize in transforming
                         ideas into innovative digital solutions. Our passion lies in crafting exceptional IT services
                         that empower businesses to thrive in the digital age.
                     </p>
@@ -141,9 +146,9 @@
                         solutions tailored to meet the unique needs of our clients. Your success is at the heart of
                         everything we do.
                     </p>
-                    <a href="/about"
+                    <a href="about.html"
                         class="inline-block bg-indigo-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-600 transition-all duration-300 poppins-regular">
-                        Learn More
+                        Know More
                     </a>
                 </div>
             </div>
@@ -162,7 +167,7 @@
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up">
                     <!-- Service Card 1 -->
                     <div
-                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
+                        class="group relative bg-white rounded-lg shadow-lg p-6  transition-all duration-300">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-code-line text-2xl"></i>
@@ -174,7 +179,7 @@
                     </div>
                     <!-- Service Card 2 -->
                     <div
-                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
+                        class="group relative bg-white rounded-lg shadow-lg p-6  transition-all duration-300">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-cloud-line text-2xl"></i>
@@ -185,20 +190,9 @@
                         </p>
                     </div>
                     <!-- Service Card 3 -->
+
                     <div
-                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
-                        <div
-                            class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
-                            <i class="ri-shield-check-line text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mt-5 poppins-regular">Cybersecurity</h3>
-                        <p class="text-gray-600 mt-2 poppins-regular">
-                            Protect your business with proactive and robust security solutions.
-                        </p>
-                    </div>
-                    <!-- Service Card 4 -->
-                    <div
-                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
+                        class="group relative bg-white rounded-lg shadow-lg p-6  transition-all duration-300">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-stack-line text-2xl"></i>
@@ -208,21 +202,10 @@
                             Gain strategic insights and expert advice to elevate your IT infrastructure.
                         </p>
                     </div>
-                    <!-- Service Card 5 -->
+                    <!-- Service Card 4 -->
+
                     <div
-                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
-                        <div
-                            class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
-                            <i class="ri-database-2-line text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mt-5 poppins-regular">Data Analytics</h3>
-                        <p class="text-gray-600 mt-2 poppins-regular">
-                            Leverage data to gain actionable insights and make informed decisions.
-                        </p>
-                    </div>
-                    <!-- Service Card 6 -->
-                    <div
-                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
+                        class="group relative bg-white rounded-lg shadow-lg p-6  transition-all duration-300">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-smartphone-line text-2xl"></i>
@@ -292,13 +275,12 @@
             </div>
         </section>
 
-
         <!-- technology section -->
         <section id="technology-section" class="bg-gray-50 py-16">
             <div class="container mx-auto px-6 lg:px-20">
                 <!-- Section Header -->
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold text-gray-800">Our Technologies</h2>
+                    <h2 class="text-4xl text-gray-800">Our Technologies</h2>
                     <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
                         We leverage cutting-edge technologies to deliver innovative and scalable solutions tailored to
                         your needs.
@@ -373,25 +355,36 @@
                         </p>
                     </div>
 
-                    <!-- Technology Card 7 -->
+                    <!-- Technology Card 7 - PHP -->
                     <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
                         <div class="flex justify-center mb-4 text-red-600">
-                            <i class="ri-angularjs-line text-6xl"></i>
+                            <i class="ri-php-line text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">Angular</h3>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">PHP</h3>
                         <p class="text-gray-600 text-center mt-2">
-                            Build robust web applications with Angular's rich ecosystem.
+                            Build dynamic and robust web applications using PHP.
                         </p>
                     </div>
 
-                    <!-- Technology Card 8 -->
+                    <!-- Technology Card 8 - iOS -->
                     <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-                        <div class="flex justify-center mb-4 text-green-400">
-                            <i class="ri-vuejs-line text-6xl"></i>
+                        <div class="flex justify-center mb-4 text-purple-600">
+                            <i class="ri-apple-line text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">Vue.js</h3>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">iOS</h3>
                         <p class="text-gray-600 text-center mt-2">
-                            Develop flexible and lightweight web interfaces with Vue.js.
+                            Develop seamless and native mobile applications for iOS devices.
+                        </p>
+                    </div>
+
+                    <!-- Technology Card 9 - Kubernetes -->
+                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <div class="flex justify-center mb-4 text-blue-500">
+                            <i class="ri-cpu-line text-6xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">Kubernetes</h3>
+                        <p class="text-gray-600 text-center mt-2">
+                            Manage and orchestrate containerized applications with Kubernetes.
                         </p>
                     </div>
                 </div>
@@ -405,10 +398,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
 
         <!-- why choose us section-->
         <section class="why_choose_us_section bg-gray-100 py-16">
@@ -520,10 +509,21 @@
         </section>
 
 
+
     </main>
 
     <script src="assets/js/script.js"></script>
     <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script>
+
+    <!-- owl caraousel cdn links -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- scroll animation script link -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -544,6 +544,31 @@
         }
 
         requestAnimationFrame(raf);
+
+        // testimonal card slider functions
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: false,
+            mouseDrag: true,
+            touchDrag: true,
+            dotsEach: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+
+            }
+        })
     </script>
 </body>
 

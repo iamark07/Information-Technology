@@ -9,3 +9,12 @@
     font-weight: 400;
     font-style: normal;
   }
+
+
+  .owl-theme .owl-nav{
+    display: none !important;
+  }
+
+  .tesitmonal_container .owl-carousel .owl-dots{
+    margin-top: 35px;
+  }

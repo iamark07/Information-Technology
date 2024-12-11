@@ -59,3 +59,28 @@ observer.observe(counterSection);
 
 
 
+
+// testimonal card slider functions
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: false,
+  mouseDrag: true,
+  touchDrag: true,
+  dotsEach: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 3
+    }
+
+  }
+})
