@@ -16,6 +16,14 @@
 
     <!-- rimix icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Include Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
     <title>Information Technology</title>
 </head>
 
@@ -46,7 +54,7 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu"
                 class="lg:hidden absolute top-0 -left-full h-[100dvh] w-full flex transition-all duration-300">
-                <nav class="py-4 px-7 h-full w-3/5 bg-gray-700 relative">
+                <nav class="py-4 px-7 h-full w-3/5 bg-gray-800 relative">
                     <!-- Logo -->
                     <div class="text-2xl poppins-regular"><a href="index.html">My Logo</a></div>
                     <ul class="!mt-10 flex flex-col gap-3">
@@ -234,63 +242,176 @@
             </div>
         </section>
 
+        <!-- counter section -->
         <section id="counter-section" class="bg-gray-800 text-white py-16">
             <div class="container mx-auto px-6 lg:px-20">
-              <!-- Section Header -->
-              <div class="text-center mb-12">
-                <h2 class="text-4xl">
-                  Our Achievements
-                </h2>
-                <p class="text-gray-400 text-lg mt-4">
-                  Milestones that highlight our success and dedication to excellence.
-                </p>
-              </div>
-          
-              <!-- Counters Grid -->
-              <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-center">
-                <!-- Counter 1 -->
-                <div class="group">
-                  <div class="text-6xl font-bold text-indigo-400" id="clients-counter">0</div>
-                  <p class="text-gray-300 text-lg mt-2">
-                    Happy Clients
-                  </p>
+                <!-- Section Header -->
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl">
+                        Our Achievements
+                    </h2>
+                    <p class="text-gray-400 text-lg mt-4">
+                        Milestones that highlight our success and dedication to excellence.
+                    </p>
                 </div>
-          
-                <!-- Counter 2 -->
-                <div class="group">
-                  <div class="text-6xl font-bold text-indigo-400" id="projects-counter">0</div>
-                  <p class="text-gray-300 text-lg mt-2">
-                    Completed Projects
-                  </p>
+
+                <!-- Counters Grid -->
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-center">
+                    <!-- Counter 1 -->
+                    <div class="group">
+                        <div class="text-6xl font-bold text-indigo-400" id="clients-counter">0</div>
+                        <p class="text-gray-300 text-lg mt-2">
+                            Happy Clients
+                        </p>
+                    </div>
+
+                    <!-- Counter 2 -->
+                    <div class="group">
+                        <div class="text-6xl font-bold text-indigo-400" id="projects-counter">0</div>
+                        <p class="text-gray-300 text-lg mt-2">
+                            Completed Projects
+                        </p>
+                    </div>
+
+                    <!-- Counter 3 -->
+                    <div class="group">
+                        <div class="text-6xl font-bold text-indigo-400" id="awards-counter">0</div>
+                        <p class="text-gray-300 text-lg mt-2">
+                            Awards Won
+                        </p>
+                    </div>
+
+                    <!-- Counter 4 -->
+                    <div class="group">
+                        <div class="text-6xl font-bold text-indigo-400" id="experts-counter">0</div>
+                        <p class="text-gray-300 text-lg mt-2">
+                            IT Experts
+                        </p>
+                    </div>
                 </div>
-          
-                <!-- Counter 3 -->
-                <div class="group">
-                  <div class="text-6xl font-bold text-indigo-400" id="awards-counter">0</div>
-                  <p class="text-gray-300 text-lg mt-2">
-                    Awards Won
-                  </p>
-                </div>
-          
-                <!-- Counter 4 -->
-                <div class="group">
-                  <div class="text-6xl font-bold text-indigo-400" id="experts-counter">0</div>
-                  <p class="text-gray-300 text-lg mt-2">
-                    IT Experts
-                  </p>
-                </div>
-              </div>
             </div>
-          </section>
-          
-          
-          
-          
-          
+        </section>
+
+
+        <!-- technology section -->
+        <section id="technology-section" class="bg-gray-50 py-16">
+            <div class="container mx-auto px-6 lg:px-20">
+                <!-- Section Header -->
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800">Our Technologies</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                        We leverage cutting-edge technologies to deliver innovative and scalable solutions tailored to
+                        your needs.
+                    </p>
+                </div>
+
+                <!-- Technologies Grid -->
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    <!-- Technology Card 1 -->
+                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <div class="flex justify-center mb-4 text-indigo-600">
+                            <i class="ri-reactjs-line text-6xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">React.js</h3>
+                        <p class="text-gray-600 text-center mt-2">
+                            Build dynamic and responsive web interfaces with our React expertise.
+                        </p>
+                    </div>
+
+                    <!-- Technology Card 2 -->
+                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <div class="flex justify-center mb-4 text-blue-600">
+                            <i class="ri-node-tree text-6xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">Node.js</h3>
+                        <p class="text-gray-600 text-center mt-2">
+                            Develop scalable and efficient backend systems using Node.js.
+                        </p>
+                    </div>
+
+                    <!-- Technology Card 3 -->
+                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <div class="flex justify-center mb-4 text-yellow-500">
+                            <i class="ri-server-line text-6xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">AWS</h3>
+                        <p class="text-gray-600 text-center mt-2">
+                            Harness the power of cloud computing with our AWS solutions.
+                        </p>
+                    </div>
+
+                    <!-- Technology Card 4 -->
+                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <div class="flex justify-center mb-4 text-green-500">
+                            <i class="ri-database-2-line text-6xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">MongoDB</h3>
+                        <p class="text-gray-600 text-center mt-2">
+                            Manage data effectively with our MongoDB expertise.
+                        </p>
+                    </div>
+
+                    <!-- Technology Card 5 -->
+                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <div class="flex justify-center mb-4 text-blue-700">
+                            <i class="ri-html5-line text-6xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">HTML5</h3>
+                        <p class="text-gray-600 text-center mt-2">
+                            Craft modern and standards-compliant web experiences.
+                        </p>
+                    </div>
+
+                    <!-- Technology Card 6 -->
+                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <div class="flex justify-center mb-4 text-cyan-500">
+                            <i class="ri-css3-line text-6xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">CSS3</h3>
+                        <p class="text-gray-600 text-center mt-2">
+                            Design visually stunning and responsive interfaces.
+                        </p>
+                    </div>
+
+                    <!-- Technology Card 7 -->
+                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <div class="flex justify-center mb-4 text-red-600">
+                            <i class="ri-angularjs-line text-6xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">Angular</h3>
+                        <p class="text-gray-600 text-center mt-2">
+                            Build robust web applications with Angular's rich ecosystem.
+                        </p>
+                    </div>
+
+                    <!-- Technology Card 8 -->
+                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+                        <div class="flex justify-center mb-4 text-green-400">
+                            <i class="ri-vuejs-line text-6xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 text-center">Vue.js</h3>
+                        <p class="text-gray-600 text-center mt-2">
+                            Develop flexible and lightweight web interfaces with Vue.js.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Button for More -->
+                <div class="text-center mt-10">
+                    <a href="technology.html"
+                        class="px-6 py-3 bg-indigo-500 text-white rounded-lg text-lg font-semibold shadow hover:bg-indigo-600 transition">
+                        Explore More Technologies
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
 
 
         <!-- why choose us section-->
-        <section class="why_choose_us_section bg-gray-50 py-16">
+        <section class="why_choose_us_section bg-gray-100 py-16">
             <div class="container mx-auto px-6 lg:px-20 text-center">
                 <!-- Heading -->
                 <h2 class="text-4xl poppins-regular text-gray-800 mb-6" data-aos="fade-up">
