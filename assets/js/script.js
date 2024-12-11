@@ -1,3 +1,25 @@
+// page reload and add hero section animation
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.getElementById("page-loader");
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      loader.classList.add("opacity-0"); // Start fading out
+      setTimeout(() => {
+        loader.remove(); // Remove from DOM after fade-out
+
+        // Add .hero_animation class to the hero section content
+        const heroSectionContent = document.querySelector(".hero_section_content");
+        if (heroSectionContent) {
+          heroSectionContent.classList.add("hero_animation");
+        }
+      }, 500); // Match this duration to the fade-out transition
+    }, 300); // Initial load delay (optional)
+  });
+});
+
+
+
 // menu bar slide js function
 
 const menuBtn = document.getElementById('menu-btn');

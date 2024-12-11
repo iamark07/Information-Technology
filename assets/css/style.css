@@ -11,8 +11,63 @@
   }
 
 
-  
+  /* page reload */
+  /* From Uiverse.io by G4b413l */ 
+.scanner span {
+  color: transparent;
+  font-size: 25px;
+  position: relative;
+  overflow: hidden;
+  height: 35px;
+  display: inline-block;
+}
 
+.scanner span::before {
+  content: "Loading...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 4px solid white;
+  overflow: hidden;
+  color: white;
+  animation: load91371 2s linear infinite;
+}
+
+@keyframes load91371 {
+  0%, 10%, 100% {
+    width: 0;
+  }
+
+  10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+    border-right-color: transparent;
+  }
+
+  11%,21%,31%,41%,51%,61%,71%,81%,91% {
+    border-right-color: white;
+  }
+
+  60%, 80% {
+    width: 100%;
+  }
+}
+
+
+/* hero section content animation */
+
+.hero_section_content{
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+.hero_animation{
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+}
+
+
+  /* owl caraousel for testimonal */
 
   .owl-carousel .owl-stage{
     margin: 10px 0px 30px 0px;

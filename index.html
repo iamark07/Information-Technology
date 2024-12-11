@@ -14,6 +14,10 @@
     <!-- scroll animation css cdn link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- fav icon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/Aiims-Logo__3.png" />
+
+
     <!-- rimix icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -32,18 +36,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
 
-    <title>Information Technology</title>
+    <title>Aiims (Application Integration and Intelligent Monitoring System)</title>
 </head>
 
 <body>
 
     <main class="w-full ">
+
+        <!-- Page Loader -->
+        <div id="page-loader"
+            class="fixed inset-0 flex items-center justify-center bg-indigo-500 z-50 transition-opacity duration-500">
+            <div class="loader">
+                <div class="scanner">
+                    <span class="poppins-regular">Loading...</span>
+                </div>
+            </div>
+        </div>
+
         <!-- Header Section -->
-        <header class="absolute top-0 left-0 z-50 bg-none text-white py-3 px-5 lg:px-5 w-full">
+        <header class="absolute top-0 left-0 z-40 bg-none text-white py-3 px-5 lg:px-5 w-full">
             <div class="flex justify-between py-3 w-full">
                 <!-- Logo -->
-                <div class="text-3xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
-                            alt="" class="w-32 md:w-44 lg:w-52"></a></div>
+                <div class="text-3xl poppins-regular"><a href="index.html"><img
+                            src="assets/img/aiims-new-logo.png" alt="" class="w-32 md:w-44 lg:w-52"></a></div>
 
                 <!-- Menu Button (For Mobile) -->
                 <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
@@ -65,8 +80,8 @@
                 class="lg:hidden absolute top-0 -left-full h-[100dvh] w-full flex transition-all duration-300">
                 <nav class="py-4 px-7 h-full w-3/5 bg-gray-800 relative">
                     <!-- Logo -->
-                    <div class="text-2xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
-                                alt="" class="w-32"></a></div>
+                    <div class="text-2xl poppins-regular"><a href="index.html"><img
+                                src="assets/img/aiims-new-logo.png" alt="" class="w-32"></a></div>
                     <ul class="!mt-10 flex flex-col gap-3">
                         <li><a href="index.html" class="block hover:text-gray-300 text-lg poppins-regular">Home</a></li>
                         <li><a href="about.html" class="block hover:text-gray-300 text-lg poppins-regular">Services</a>
@@ -92,8 +107,7 @@
             <video src="assets/video/bg-video.mp4" loop autoplay muted
                 class="-z-10 absolute top-0 left-0 w-full h-[100dvh] object-cover">
             </video>
-            <div class="hero_section_content relative w-full h-[100dvh] flex flex-col items-center justify-center px-3"
-                data-aos="fade-up">
+            <div class="hero_section_content transition-all duration-700 relative w-full h-[100dvh] flex flex-col items-center justify-center px-3">
                 <h1
                     class="text-white text-4xl md:text-6xl poppins-regular text-center mt-32 transition-all duration-500 hover:scale-110">
                     Application Integration
@@ -115,23 +129,8 @@
         </section>
 
         <!-- about section -->
-        <!-- <section class="about_section my-24 px-5 md:px-20">
-            <h2 class="text-center poppins-regular text-4xl">About Us</h2>
-            <p class="poppins-regular text-center mt-3 md:text-lg font-semibold">"Innovating Technology, Empowering Success"</p>
-            <div class="grid grid-cols-2 mt-5 gap-7">
-                <div class="col-span-2 flex flex-col items-center">
-                    <p class="md:text-lg text-center">At [Company Name], we specialize in delivering innovative IT solutions that transform businesses and drive growth. Our mission is to empower organizations with cutting-edge technology, seamless digital experiences, and reliable support, enabling them to achieve their goals with confidence in an ever-evolving digital world.
-                    </p>
-                    <button>
-                        <a href="about.html"
-                        class="mt-5 px-10 py-3 border-black border text-black inline-block hover:bg-black hover:text-white transition-all duration-300 poppins-regular">Know More</a>
-                    </button>
-                </div>
-            </div>
-        </section> -->
-
-        <section class="about_section bg-gray-50 py-16" data-aos="fade-up">
-            <div class="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row items-center">
+        <section class="about_section bg-gray-50 py-16">
+            <div class="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row items-center" data-aos="fade-up">
                 <!-- Image Section -->
                 <div class="lg:w-1/2 mb-8 lg:mb-0">
                     <img src="assets/img/about_us.jpg" alt="About Us"
@@ -174,7 +173,8 @@
                 </p>
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up">
                     <!-- Service Card 1 -->
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105  transition-all duration-300">
+                    <div
+                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105  transition-all duration-300">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-code-line text-2xl"></i>
@@ -185,7 +185,8 @@
                         </p>
                     </div>
                     <!-- Service Card 2 -->
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+                    <div
+                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-cloud-line text-2xl"></i>
@@ -197,7 +198,8 @@
                     </div>
                     <!-- Service Card 3 -->
 
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+                    <div
+                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-stack-line text-2xl"></i>
@@ -209,7 +211,8 @@
                     </div>
                     <!-- Service Card 4 -->
 
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+                    <div
+                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-smartphone-line text-2xl"></i>
@@ -418,7 +421,8 @@
                 <!-- Features Grid -->
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up">
                     <!-- Feature 1 -->
-                    <div class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <div
+                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
                             class="flex items-center justify-center bg-indigo-500 text-white w-16 h-16 rounded-full mx-auto group-hover:bg-indigo-600">
                             <i class="ri-lightbulb-line text-3xl"></i>
@@ -432,7 +436,8 @@
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <div
+                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
                             class="flex items-center justify-center bg-indigo-500 text-white w-16 h-16 rounded-full mx-auto group-hover:bg-indigo-600">
                             <i class="ri-shield-star-line text-3xl"></i>
@@ -446,7 +451,8 @@
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <div
+                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
                             class="flex items-center justify-center bg-indigo-500 text-white w-16 h-16 rounded-full mx-auto group-hover:bg-indigo-600">
                             <i class="ri-customer-service-2-line text-3xl"></i>
@@ -460,7 +466,8 @@
                     </div>
 
                     <!-- Feature 4 -->
-                    <div class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <div
+                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
                             class="flex items-center justify-center bg-indigo-500 text-white w-16 h-16 rounded-full mx-auto group-hover:bg-indigo-600">
                             <i class="ri-bar-chart-line text-3xl"></i>
@@ -474,7 +481,8 @@
                     </div>
 
                     <!-- Feature 5 -->
-                    <div class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <div
+                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
                             class="flex items-center justify-center bg-indigo-500 text-white w-16 h-16 rounded-full mx-auto group-hover:bg-indigo-600">
                             <i class="ri-rocket-line text-3xl"></i>
@@ -488,7 +496,8 @@
                     </div>
 
                     <!-- Feature 6 -->
-                    <div class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <div
+                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
                             class="flex items-center justify-center bg-indigo-500 text-white w-16 h-16 rounded-full mx-auto group-hover:bg-indigo-600">
                             <i class="ri-team-line text-3xl"></i>
@@ -587,9 +596,9 @@
         <section class="bg-gray-100 p-8 rounded-lg shadow-lg w-full flex flex-col items-center py-20 px-5 md:px-20">
             <div class="contact_wrapper w-full lg:w-2/3">
                 <!-- Company Information Section -->
-                <div class="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-5 items-center mb-8"  data-aos="fade-up">
-                    <div
-                        class="flex items-center justify-center bg-blue-500 text-white w-16 h-16 rounded-full">
+                <div class="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-5 items-center mb-8"
+                    data-aos="fade-up">
+                    <div class="flex items-center justify-center bg-blue-500 text-white w-16 h-16 rounded-full">
                         <i class="ri-information-line text-3xl"></i>
                     </div>
                     <div>
@@ -618,7 +627,8 @@
                             <label for="email" class="block text-gray-700 font-medium">Email Address</label>
                             <input type="email" id="email" name="email"
                                 class="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                            <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.
+                            <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email
+                                address.
                             </p>
                         </div>
 
@@ -627,7 +637,8 @@
                             <input type="tel" id="phone" name="phone"
                                 class="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 pattern="[0-9]{10}" />
-                            <p id="phoneError" class="text-red-500 text-sm mt-1 hidden">Phone number must be 10 digits.</p>
+                            <p id="phoneError" class="text-red-500 text-sm mt-1 hidden">Phone number must be 10 digits.
+                            </p>
                         </div>
 
                         <div class="col-span-2">
@@ -656,10 +667,11 @@
                         <img src="assets/img/aiims-new-logo.png" alt="Company Logo" class="w-60 mb-4" />
                         <p class="text-gray-400 text-center md:text-left">
                             Aiims(Application Integration and Intelligent
-                            Monitoring System) - Shaping the future of IT with innovative solutions and unparalleled expertise.
+                            Monitoring System) - Shaping the future of IT with innovative solutions and unparalleled
+                            expertise.
                         </p>
                     </div>
-        
+
                     <!-- Quick Links -->
                     <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                         <h3 class="text-lg font-bold mb-4">Quick Links</h3>
@@ -671,7 +683,7 @@
                             <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
                         </ul>
                     </div>
-        
+
                     <!-- Contact Information -->
                     <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                         <h3 class="text-lg font-bold mb-4">Contact Information</h3>
@@ -688,7 +700,7 @@
                         </ul>
                     </div>
                 </div>
-        
+
                 <!-- Social Media and Copyright -->
                 <div class="mt-8 border-t border-gray-700 pt-6 text-center lg:text-left lg:flex lg:justify-between">
                     <div>
@@ -698,14 +710,13 @@
                     <div class="flex justify-center lg:justify-end space-x-4 mt-5 lg-mt-0">
                         <a href="#" class="text-gray-400 hover:text-white"><i class="ri-facebook-fill text-2xl"></i></a>
                         <a href="#" class="text-gray-400 hover:text-white"><i class="ri-twitter-fill text-2xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="ri-instagram-fill text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i
+                                class="ri-instagram-fill text-2xl"></i></a>
                         <a href="#" class="text-gray-400 hover:text-white"><i class="ri-linkedin-fill text-2xl"></i></a>
                     </div>
                 </div>
             </div>
         </footer>
-        
-
 
     </main>
 
