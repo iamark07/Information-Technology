@@ -60,27 +60,53 @@ observer.observe(counterSection);
 
 
 
-// testimonal card slider functions
-$('.owl-carousel').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  autoplayHoverPause: false,
-  mouseDrag: true,
-  touchDrag: true,
-  dotsEach: true,
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 2
-    },
-    1000: {
-      items: 3
-    }
+// contact form vaidation 
 
-  }
-})
+const form = document.getElementById('contactForm');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Reset errors
+            document.querySelectorAll('.text-red-500').forEach(error => error.classList.add('hidden'));
+
+            let valid = true;
+
+            // Validate Name
+            const name = document.getElementById('name');
+            const nameError = document.getElementById('nameError');
+            if (!name.value.trim()) {
+                nameError.classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Email
+            const email = document.getElementById('email');
+            const emailError = document.getElementById('emailError');
+            if (!email.value || !validator.isEmail(email.value)) {
+                emailError.classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Phone
+            const phone = document.getElementById('phone');
+            const phoneError = document.getElementById('phoneError');
+            if (!phone.value.match(/^[0-9]{10}$/)) {
+                phoneError.classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Message
+            const message = document.getElementById('message');
+            const messageError = document.getElementById('messageError');
+            if (!message.value.trim()) {
+                messageError.classList.remove('hidden');
+                valid = false;
+            }
+
+            // If the form is valid, submit it (you can add AJAX submission here)
+            if (valid) {
+                alert('Form submitted successfully!');
+                form.reset();
+            }
+        });
