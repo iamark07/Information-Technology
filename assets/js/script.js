@@ -20,6 +20,49 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+
+// header add class for bg on scroll
+
+// Get the header element and other required elements
+const header = document.querySelector('header');
+const logoContainer = document.querySelector('.text-3xl');
+const header_container = document.querySelector('.header_container');
+const header_menu = document.querySelector('#menu');
+
+// Function to handle scroll event
+const handleScroll = () => {
+    // Check if the user has scrolled down more than 50px
+    if (window.scrollY > 100) {
+        // Add the bg-gray-800 class to the header
+        header.classList.add('bg-gray-800');
+        // Add lg:w-44 to the logo image
+        logoContainer.querySelector('img').classList.add('lg:w-36');
+        logoContainer.querySelector('img').classList.remove('lg:w-52');
+        // Add items-center to the flex container
+        header_menu.classList.remove('mt-3');
+        header_container.classList.add('items-center');
+        header_container.classList.remove('py-3');
+    } else {
+        // Remove the bg-gray-800 class from the header
+        header.classList.remove('bg-gray-800');
+        // Remove lg:w-44 from the logo image
+        logoContainer.querySelector('img').classList.add('lg:w-52');
+        logoContainer.querySelector('img').classList.remove('lg:w-36');
+        // Remove items-center from the flex container
+        flexContainer.classList.remove('items-center');
+    }
+};
+
+// Listen for the scroll event
+window.addEventListener('scroll', handleScroll);
+
+
+
+
+
+
 // menu bar slide js function
 
 const menuBtn = document.getElementById("menu-btn");
@@ -33,6 +76,9 @@ menuBtn.addEventListener("click", () => {
 close_menu.addEventListener("click", () => {
   mobileMenu.classList.toggle("!left-0");
 });
+
+
+
 
 
  // JavaScript for Service Popup
@@ -80,6 +126,9 @@ function closePopup() {
 }
 
 
+
+
+
 // Counter Animation Logic
 const counters = [
   { id: "clients-counter", target: 500 },
@@ -123,6 +172,12 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(counterSection);
+
+
+
+
+
+
 
 // contact form vaidation
 
