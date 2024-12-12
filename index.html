@@ -67,7 +67,7 @@
                         class="hover:text-[#f59b40] font-semibold text-[#f5ae40] text-lg poppins-regular">Home</a>
                     <a href="about.html" class="hover:text-gray-300 text-lg poppins-regular">About</a>
                     <a href="service.html" class="hover:text-gray-300 text-lg poppins-regular">Services</a>
-                    <a href="technology.html" class="hover:text-gray-300 text-lg poppins-regular">Technology</a>
+                    <a href="#technology-section" class="hover:text-gray-300 text-lg poppins-regular">Technology</a>
                     <a href="contact.html" class="hover:text-gray-300 text-lg poppins-regular">Contact</a>
                 </nav>
             </div>
@@ -83,11 +83,12 @@
                         <li><a href="index.html"
                                 class="block hover:text-[#f59b40] font-semibold text-[#f5ae40] text-lg poppins-regular">Home</a>
                         </li>
-                        <li><a href="about.html" class="block hover:text-gray-300 text-lg poppins-regular">Services</a>
+                        <li><a href="about.html" class="block hover:text-gray-300 text-lg poppins-regular">About</a>
                         </li>
-                        <li><a href="service.html" class="block hover:text-gray-300 text-lg poppins-regular">About</a>
+                        <li><a href="service.html"
+                                class="block hover:text-gray-300 text-lg poppins-regular">Services</a>
                         </li>
-                        <li><a href="technology.html"
+                        <li><a href="#technology-section"
                                 class="block hover:text-gray-300 text-lg poppins-regular">Portfolio</a></li>
                         <li><a href="contact.html" class="block hover:text-gray-300 text-lg poppins-regular">Contact</a>
                         </li>
@@ -106,6 +107,7 @@
             <video src="assets/video/bg-video.mp4" loop autoplay muted
                 class="-z-10 absolute top-0 left-0 w-full h-[100dvh] object-cover">
             </video>
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-30 -z-10"></div>
             <div
                 class="hero_section_content transition-all duration-700 relative w-full h-[100dvh] flex flex-col items-center justify-center px-3">
                 <h1
@@ -174,7 +176,7 @@
 
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up">
                     <!-- Service Cards -->
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card"
+                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
                         data-service="Software Development"
                         data-description="Build custom software solutions tailored to your unique business needs."
                         data-long-description="Our software development services include end-to-end solutions, from requirement analysis to deployment and maintenance. We use cutting-edge technologies to create scalable and secure applications that align with your business objectives. Our expertise spans across web applications, enterprise systems, and custom software solutions tailored to your specific needs."
@@ -190,7 +192,7 @@
                         </p>
                     </div>
 
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card"
+                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
                         data-service="Cloud Solutions"
                         data-description="Modernize your operations with scalable and secure cloud services."
                         data-long-description="Our cloud solutions enable businesses to embrace the future with confidence. From cloud migration to ongoing management, we offer a range of services that ensure flexibility, security, and cost-efficiency. Experience the power of cloud computing with our tailored strategies and robust infrastructure."
@@ -205,7 +207,7 @@
                         </p>
                     </div>
 
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card"
+                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
                         data-service="IT Consulting"
                         data-description="Gain strategic insights and expert advice to elevate your IT infrastructure."
                         data-long-description="Our IT consulting services are designed to help businesses navigate the complexities of the technology landscape. From strategy formulation to implementation, we provide actionable insights and hands-on support to transform your IT infrastructure into a powerful business enabler."
@@ -220,7 +222,7 @@
                         </p>
                     </div>
 
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card"
+                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
                         data-service="Mobile App Development"
                         data-description="Design and develop intuitive mobile applications for iOS and Android."
                         data-long-description="We specialize in crafting user-friendly and feature-rich mobile applications. Our team ensures seamless integration, cross-platform compatibility, and engaging interfaces to deliver apps that resonate with your audience and achieve your business goals."
@@ -249,15 +251,15 @@
         <div id="service-popup"
             class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50 px-5">
             <div
-                class="relative bg-white rounded-lg shadow-xl p-8 max-w-lg w-full transition-transform duration-300 transform scale-95">
+                class="relative bg-white rounded-lg shadow-xl py-8 px-5 md:p-8 max-w-lg w-full transition-transform duration-300 transform scale-95">
                 <button id="popup-close" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-xl">
                     <i class="ri-close-line text-3xl"></i>
                 </button>
-                <h3 id="popup-title" class="text-2xl font-bold text-[#f5ae40] mb-4 poppins-regular">Service Title</h3>
+                <h3 id="popup-title" class="text-xl md:text-2xl font-bold text-[#f5ae40] mb-4 poppins-regular">Service Title</h3>
                 <p id="popup-description" class="text-black poppins-regular">Service Description</p>
                 <div class="text-center mt-6">
-                    <a id="popup-link" href="#" target="_blank"
-                        class="bg-[#f5ae40] text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-[#f59b40] transition-all duration-300 poppins-regular">
+                    <a id="popup-link" href="#"
+                        class="bg-[#f5ae40] text-white text-sm font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-[#f59b40] transition-all duration-300 poppins-regular">
                         Learn More
                     </a>
                 </div>
@@ -699,7 +701,7 @@
         </section>
 
         <!-- footer section -->
-        <footer class="bg-gray-800 text-white py-10 px-5 lg:px-10 overflow-hidden">
+        <footer class="bg-gray-800 text-white pt-10 pb-5 px-5 lg:px-10 overflow-hidden">
             <div class="container_wrapper mx-auto px-4">
                 <!-- Footer Content -->
                 <div class="grid grid-cols-6 gap-8">
@@ -715,7 +717,9 @@
 
                     <!-- Quick Links -->
                     <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                        <h3 class="text-lg font-bold mb-4 poppins-regular">Quick Links</h3>
+                        <h3
+                            class="text-lg font-bold mb-4 poppins-regular border-b-2 pb-1 inline-block border-[#f5ae40]">
+                            Quick Links</h3>
                         <ul class="space-y-2">
                             <li><a href="#" class="text-gray-400 hover:text-white poppins-regular">Home</a></li>
                             <li><a href="#" class="text-gray-400 hover:text-white poppins-regular">About Us</a></li>
@@ -727,35 +731,46 @@
 
                     <!-- Contact Information -->
                     <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                        <h3 class="text-lg font-bold mb-4 poppins-regular">Contact Information</h3>
+                        <h3
+                            class="text-lg font-bold mb-4 poppins-regular border-b-2 pb-1 inline-block border-[#f5ae40]">
+                            Contact Information</h3>
                         <ul class="space-y-2">
                             <li class="text-gray-400 poppins-regular">
-                                <i class="ri-map-pin-line"></i> 1234 Tech Avenue, Silicon Valley, CA 94025
+                                <i class="ri-map-pin-line text-[#f5ae40]"></i> 1234 Tech Avenue, Silicon Valley, CA
+                                94025
                             </li>
                             <li class="text-gray-400 poppins-regular">
-                                <i class="ri-phone-line"></i> +1 (800) 123-4567
+                                <i class="ri-phone-line text-[#f5ae40]"></i> +1 (800) 123-4567
                             </li>
                             <li class="text-gray-400 poppins-regular">
-                                <i class="ri-mail-line"></i> contact@webglow.com
+                                <i class="ri-mail-line text-[#f5ae40]"></i> contact@webglow.com
                             </li>
                         </ul>
+                        <div class="flex space-x-4 mt-7">
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-facebook-fill text-2xl"></i></a>
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-instagram-fill text-2xl"></i></a>
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-twitter-fill text-2xl"></i></a>
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-linkedin-fill text-2xl"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Social Media and Copyright -->
-                <div class="mt-8 border-t border-gray-700 pt-6 text-center lg:text-left lg:flex lg:justify-between">
+                <div class="mt-8 border-t border-gray-700 pt-6 text-center flex justify-center">
                     <div>
-                        <p class="text-gray-400 poppins-regular">&copy; 2024 Aiims(Application Integration and
-                            Intelligent
-                            Monitoring System). All rights reserved.</p>
+                        <p class="text-gray-400 poppins-regular text-center">&copy; 2024 <span
+                                class="!text-[#f5ae40]">Aiims(Application Integration and Intelligent
+                                Monitoring System)</span> All rights reserved.</p>
                     </div>
-                    <div class="flex justify-center lg:justify-end space-x-4 mt-5 lg:mt-0">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="ri-facebook-fill text-2xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="ri-twitter-fill text-2xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i
-                                class="ri-instagram-fill text-2xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="ri-linkedin-fill text-2xl"></i></a>
-                    </div>
+
                 </div>
             </div>
         </footer>
@@ -763,7 +778,8 @@
     </main>
 
     <script src="assets/js/script.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script>
+    <!-- for smooth scroll  -->
+    <!-- <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script> -->
 
     <!-- owl caraousel cdn links -->
 
@@ -784,16 +800,16 @@
         }
         );
 
-        // Initialize Lenis
-        const lenis = new Lenis();
+        // // Initialize Lenis
+        // const lenis = new Lenis();
 
-        // Use requestAnimationFrame to continuously update the scroll
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
+        // // Use requestAnimationFrame to continuously update the scroll
+        // function raf(time) {
+        //     lenis.raf(time);
+        //     requestAnimationFrame(raf);
+        // }
 
-        requestAnimationFrame(raf);
+        // requestAnimationFrame(raf);
 
         // testimonal card slider functions
         $('.owl-carousel').owlCarousel({

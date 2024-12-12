@@ -98,9 +98,9 @@ serviceCards.forEach(card => {
     const serviceLink = card.dataset.link; // Get the link from the data attribute
 
     popupTitle.textContent = service;
-    popupDescription.innerHTML = `<p class=\"font-semibold\">${description}</p><p class=\"mt-4 text-gray-700\">${longDescription}</p>`; // Combine short and detailed text
+    popupDescription.innerHTML = `<p class=\"font-semibold\">${description}</p><p class=\" text-sm md:text-md mt-4 text-gray-700\">${longDescription}</p>`; // Combine short and detailed text
     popupLink.href = serviceLink; // Dynamically update the button link
-    popupLink.textContent = `Explore ${service}`; // Update button text dynamically
+    popupLink.textContent = `Explore more`; // Update button text dynamically
 
     popup.classList.remove('hidden');
     popup.classList.add('flex');

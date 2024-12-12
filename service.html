@@ -49,9 +49,8 @@
             <img src="assets/img/Aiims-Logo__4.png" alt="" class="loader_animate w-24">
         </div>
 
-        <!-- fixed top-0 left-0 z-40 -->
         <!-- Header Section -->
-        <header class="!bg-gray-800 transition-all duration-300 bg-none text-white py-3 px-5 lg:px-5 w-full">
+        <header class="fixed top-0 left-0 z-40 transition-all duration-300 bg-none text-white py-3 px-5 lg:px-5 w-full">
             <div class="header_container transition-all duration-300 flex justify-between py-3 w-full">
                 <!-- Logo -->
                 <div class="text-3xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
@@ -65,10 +64,10 @@
                 <!-- Navigation Links -->
                 <nav id="menu" class="hidden lg:flex gap-8 mt-3">
                     <a href="index.html"
-                        class="text-lg poppins-regular hover:text-gray-300">Home</a>
+                        class="hover:text-gray-300 text-lg poppins-regular">Home</a>
                     <a href="about.html" class="hover:text-gray-300 text-lg poppins-regular">About</a>
-                    <a href="service.html" class=" hover:text-[#f59b40] font-semibold text-[#f5ae40]  text-lg poppins-regular">Services</a>
-                    <a href="technology.html" class="hover:text-gray-300 text-lg poppins-regular">Technology</a>
+                    <a href="service.html" class="hover:text-[#f59b40] font-semibold text-[#f5ae40] text-lg poppins-regular">Services</a>
+                    <a href="index.html#technology-section" class="hover:text-gray-300 text-lg poppins-regular">Technology</a>
                     <a href="contact.html" class="hover:text-gray-300 text-lg poppins-regular">Contact</a>
                 </nav>
             </div>
@@ -84,11 +83,12 @@
                         <li><a href="index.html"
                                 class="block hover:text-gray-300 text-lg poppins-regular">Home</a>
                         </li>
-                        <li><a href="about.html" class="block hover:text-[#f59b40] font-semibold text-[#f5ae40] text-lg poppins-regular">Services</a>
+                        <li><a href="about.html" class="block hover:text-gray-300 text-lg poppins-regular">About</a>
                         </li>
-                        <li><a href="service.html" class="block hover:text-gray-300 text-lg poppins-regular">About</a>
+                        <li><a href="service.html"
+                                class="block hover:text-[#f59b40] font-semibold text-[#f5ae40] text-lg poppins-regular">Services</a>
                         </li>
-                        <li><a href="technology.html"
+                        <li><a href="index.html#technology-section"
                                 class="block hover:text-gray-300 text-lg poppins-regular">Portfolio</a></li>
                         <li><a href="contact.html" class="block hover:text-gray-300 text-lg poppins-regular">Contact</a>
                         </li>
@@ -101,8 +101,33 @@
             </div>
         </header>
 
+        <!-- hero section -->
+        <section class="hero_section relative w-full overflow-hidden">
+            <!-- hero bg videp -->
+            <video src="assets/video/bg-video-2.mp4" loop autoplay muted
+                class="-z-10 absolute top-0 left-0 w-full h-[100dvh] object-cover">
+            </video>
+            <!-- Dark Overlay -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
+            <div
+                class="hero_section_content transition-all duration-700 relative w-full h-[100dvh] flex flex-col items-center justify-center px-3">
+                <h1
+                    class="text-white text-4xl md:text-6xl poppins-regular text-center mt-32 transition-all duration-500 hover:scale-110">
+                    Smart, Scalable, and Secure 
+                    <br><span class="text-3xl sm:text-4xl md:text-5xl">IT Services</span>
+                </h1>
+                <p class="text-center w-full md:w-3/4 text-white text-lg mt-5 poppins-regular">Discover how our scalable, secure, and innovative IT services can transform your business operations and elevate your customer experience.</p>
+            </div>
+            <!-- External Links -->
+            <div class="absolute z-10 bottom-5 left-6 lg:left-10 flex gap-5">
+                <a href="https://www.linkedin.com" target="_blank" class="hover:text-gray-300"><i
+                        class="ri-linkedin-box-fill text-white text-4xl"></i>
+                </a>
+            </div>
+        </section>
+
         <!-- Breadcrumb -->
-        <nav class="bg-white py-4 px-6 shadow-sm">
+        <!-- <nav class="bg-white py-4 px-6 shadow-sm">
             <div class="container mx-auto flex items-center">
                 <a href="index.html" class="text-black hover:text-gray-700 transition-all poppins-regular">Home</a>
                 <span class="mx-2 text-gray-400">/</span>
@@ -111,7 +136,7 @@
                 <span class="mx-2 text-gray-400">/</span>
                 <span class="text-gray-600 poppins-regular">Service Details</span>
             </div>
-        </nav>
+        </nav> -->
 
         <!-- Service Details Section -->
         <section class="service-details py-16 px-6 lg:px-20">
@@ -433,13 +458,13 @@
 
 
         <!-- footer section -->
-        <footer class="bg-gray-800 text-white py-10 px-5 lg:px-10 overflow-hidden mt-20">
+        <footer class="bg-gray-800 text-white pt-10 pb-5 px-5 lg:px-10 overflow-hidden">
             <div class="container_wrapper mx-auto px-4">
                 <!-- Footer Content -->
                 <div class="grid grid-cols-6 gap-8">
                     <!-- Company Logo and Description -->
                     <div class="col-span-6 lg:col-span-2 flex flex-col items-center md:items-start">
-                        <img src="assets/img/aiims-new-logo.png" alt="Company Logo" class="w-60 mb-4" />
+                        <img src="assets/img/aiims-new-logo.png" alt="Company Logo" class="w-44 mb-4" />
                         <p class="text-gray-400 text-center md:text-left poppins-regular">
                             Aiims(Application Integration and Intelligent
                             Monitoring System) - Shaping the future of IT with innovative solutions and unparalleled
@@ -449,7 +474,9 @@
 
                     <!-- Quick Links -->
                     <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                        <h3 class="text-lg font-bold mb-4 poppins-regular">Quick Links</h3>
+                        <h3
+                            class="text-lg font-bold mb-4 poppins-regular border-b-2 pb-1 inline-block border-[#f5ae40]">
+                            Quick Links</h3>
                         <ul class="space-y-2">
                             <li><a href="#" class="text-gray-400 hover:text-white poppins-regular">Home</a></li>
                             <li><a href="#" class="text-gray-400 hover:text-white poppins-regular">About Us</a></li>
@@ -461,35 +488,46 @@
 
                     <!-- Contact Information -->
                     <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                        <h3 class="text-lg font-bold mb-4 poppins-regular">Contact Information</h3>
+                        <h3
+                            class="text-lg font-bold mb-4 poppins-regular border-b-2 pb-1 inline-block border-[#f5ae40]">
+                            Contact Information</h3>
                         <ul class="space-y-2">
                             <li class="text-gray-400 poppins-regular">
-                                <i class="ri-map-pin-line"></i> 1234 Tech Avenue, Silicon Valley, CA 94025
+                                <i class="ri-map-pin-line text-[#f5ae40]"></i> 1234 Tech Avenue, Silicon Valley, CA
+                                94025
                             </li>
                             <li class="text-gray-400 poppins-regular">
-                                <i class="ri-phone-line"></i> +1 (800) 123-4567
+                                <i class="ri-phone-line text-[#f5ae40]"></i> +1 (800) 123-4567
                             </li>
                             <li class="text-gray-400 poppins-regular">
-                                <i class="ri-mail-line"></i> contact@webglow.com
+                                <i class="ri-mail-line text-[#f5ae40]"></i> contact@webglow.com
                             </li>
                         </ul>
+                        <div class="flex space-x-4 mt-7">
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-facebook-fill text-2xl"></i></a>
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-instagram-fill text-2xl"></i></a>
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-twitter-fill text-2xl"></i></a>
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-linkedin-fill text-2xl"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Social Media and Copyright -->
-                <div class="mt-8 border-t border-gray-700 pt-6 text-center lg:text-left lg:flex lg:justify-between">
+                <div class="mt-8 border-t border-gray-700 pt-6 text-center flex justify-center">
                     <div>
-                        <p class="text-gray-400 poppins-regular">&copy; 2024 Aiims(Application Integration and
-                            Intelligent
-                            Monitoring System). All rights reserved.</p>
+                        <p class="text-gray-400 poppins-regular text-center">&copy; 2024 <span
+                                class="!text-[#f5ae40]">Aiims(Application Integration and Intelligent
+                                Monitoring System)</span> All rights reserved.</p>
                     </div>
-                    <div class="flex justify-center lg:justify-end space-x-4 mt-5 lg:mt-0">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="ri-facebook-fill text-2xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="ri-twitter-fill text-2xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i
-                                class="ri-instagram-fill text-2xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="ri-linkedin-fill text-2xl"></i></a>
-                    </div>
+
                 </div>
             </div>
         </footer>
@@ -497,11 +535,12 @@
 
 
 
-
     </main>
 
     <script src="assets/js/script.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script>
+
+    <!-- for smooth scroll  -->
+    <!-- <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script> -->
 
     <!-- owl caraousel cdn links -->
 
@@ -526,16 +565,16 @@
         }
         );
 
-        // Initialize Lenis
-        const lenis = new Lenis();
+        // // Initialize Lenis
+        // const lenis = new Lenis();
 
-        // Use requestAnimationFrame to continuously update the scroll
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
+        // // Use requestAnimationFrame to continuously update the scroll
+        // function raf(time) {
+        //     lenis.raf(time);
+        //     requestAnimationFrame(raf);
+        // }
 
-        requestAnimationFrame(raf);
+        // requestAnimationFrame(raf);
 
         // testimonal card slider functions
         $('.owl-carousel').owlCarousel({
