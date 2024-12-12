@@ -34,6 +34,47 @@ close_menu.addEventListener("click", () => {
   mobileMenu.classList.toggle("!left-0");
 });
 
+
+ // JavaScript for Service Popup
+ const serviceCards = document.querySelectorAll('.service-card');
+ const popup = document.getElementById('service-popup');
+ const popupTitle = document.getElementById('popup-title');
+ const popupDescription = document.getElementById('popup-description');
+ const popupClose = document.getElementById('popup-close');
+
+ // Open Popup with dynamic content
+ serviceCards.forEach(card => {
+   card.addEventListener('click', () => {
+     const service = card.dataset.service;
+     const description = card.dataset.description;
+     const longDescription = card.dataset.longDescription; // Get the detailed text
+
+     popupTitle.textContent = service;
+     popupDescription.innerHTML = `<p class=\"font-semibold\">${description}</p><p class=\"mt-4 text-gray-700\">${longDescription}</p>`; // Combine short and detailed text
+
+     popup.classList.remove('hidden');
+     popup.classList.add('flex');
+     popup.querySelector('.relative').classList.remove('scale-95');
+     popup.querySelector('.relative').classList.add('scale-100');
+   });
+ });
+
+ // Close Popup
+ popupClose.addEventListener('click', () => closePopup());
+
+ popup.addEventListener('click', (e) => {
+   if (e.target === popup) closePopup();
+ });
+
+ function closePopup() {
+   popup.querySelector('.relative').classList.add('scale-95');
+   popup.querySelector('.relative').classList.remove('scale-100');
+   setTimeout(() => {
+     popup.classList.add('hidden');
+     popup.classList.remove('flex');
+   }, 200);
+ }
+
 // Counter Animation Logic
 const counters = [
   { id: "clients-counter", target: 500 },

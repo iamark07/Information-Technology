@@ -53,8 +53,8 @@
         <header class="absolute top-0 left-0 z-40 bg-none text-white py-3 px-5 lg:px-5 w-full">
             <div class="flex justify-between py-3 w-full">
                 <!-- Logo -->
-                <div class="text-3xl poppins-regular"><a href="index.html"><img
-                            src="assets/img/aiims-new-logo.png" alt="" class="w-32 md:w-44 lg:w-52"></a></div>
+                <div class="text-3xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
+                            alt="" class="w-32 md:w-44 lg:w-52"></a></div>
 
                 <!-- Menu Button (For Mobile) -->
                 <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
@@ -63,7 +63,7 @@
 
                 <!-- Navigation Links -->
                 <nav id="menu" class="hidden lg:flex gap-8 mt-3">
-                    <a href="index.html" class="hover:text-gray-300 text-lg poppins-regular">Home</a>
+                    <a href="index.html" class="hover:text-indigo-500 text-indigo-400 text-lg poppins-regular">Home</a>
                     <a href="about.html" class="hover:text-gray-300 text-lg poppins-regular">About</a>
                     <a href="service.html" class="hover:text-gray-300 text-lg poppins-regular">Services</a>
                     <a href="technology.html" class="hover:text-gray-300 text-lg poppins-regular">Technology</a>
@@ -76,10 +76,10 @@
                 class="lg:hidden absolute top-0 -left-full h-[100dvh] w-full flex transition-all duration-300">
                 <nav class="py-4 px-7 h-full w-3/5 bg-gray-800 relative">
                     <!-- Logo -->
-                    <div class="text-2xl poppins-regular"><a href="index.html"><img
-                                src="assets/img/aiims-new-logo.png" alt="" class="w-32"></a></div>
+                    <div class="text-2xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
+                                alt="" class="w-32"></a></div>
                     <ul class="!mt-10 flex flex-col gap-3">
-                        <li><a href="index.html" class="block hover:text-gray-300 text-lg poppins-regular">Home</a></li>
+                        <li><a href="index.html" class="block hover:text-indigo-500 text-indigo-400 text-lg poppins-regular">Home</a></li>
                         <li><a href="about.html" class="block hover:text-gray-300 text-lg poppins-regular">Services</a>
                         </li>
                         <li><a href="service.html" class="block hover:text-gray-300 text-lg poppins-regular">About</a>
@@ -103,7 +103,8 @@
             <video src="assets/video/bg-video.mp4" loop autoplay muted
                 class="-z-10 absolute top-0 left-0 w-full h-[100dvh] object-cover">
             </video>
-            <div class="hero_section_content transition-all duration-700 relative w-full h-[100dvh] flex flex-col items-center justify-center px-3">
+            <div
+                class="hero_section_content transition-all duration-700 relative w-full h-[100dvh] flex flex-col items-center justify-center px-3">
                 <h1
                     class="text-white text-4xl md:text-6xl poppins-regular text-center mt-32 transition-all duration-500 hover:scale-110">
                     Application Integration
@@ -157,7 +158,7 @@
             </div>
         </section>
 
-        <!-- service Section -->
+        <!-- Service Section -->
         <section class="service_section bg-gray-100 py-16 overflow-hidden">
             <div class="container mx-auto px-6 lg:px-20">
                 <h2 class="text-4xl poppins-regular text-gray-800 text-center mb-8" data-aos="fade-up">
@@ -167,10 +168,13 @@
                     Explore our diverse range of IT services crafted to drive innovation, efficiency, and success for
                     your business.
                 </p>
+
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up">
-                    <!-- Service Card 1 -->
-                    <div
-                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105  transition-all duration-300">
+                    <!-- Service Cards -->
+                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card"
+                        data-service="Software Development"
+                        data-description="Build custom software solutions tailored to your unique business needs."
+                        data-long-description="Our software development services include end-to-end solutions, from requirement analysis to deployment and maintenance. We use cutting-edge technologies to create scalable and secure applications that align with your business objectives. Our expertise spans across web applications, enterprise systems, and custom software solutions tailored to your specific needs.">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-code-line text-2xl"></i>
@@ -180,9 +184,11 @@
                             Build custom software solutions tailored to your unique business needs.
                         </p>
                     </div>
-                    <!-- Service Card 2 -->
-                    <div
-                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+
+                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card"
+                        data-service="Cloud Solutions"
+                        data-description="Modernize your operations with scalable and secure cloud services."
+                        data-long-description="Our cloud solutions enable businesses to embrace the future with confidence. From cloud migration to ongoing management, we offer a range of services that ensure flexibility, security, and cost-efficiency. Experience the power of cloud computing with our tailored strategies and robust infrastructure.">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-cloud-line text-2xl"></i>
@@ -192,10 +198,11 @@
                             Modernize your operations with scalable and secure cloud services.
                         </p>
                     </div>
-                    <!-- Service Card 3 -->
 
-                    <div
-                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card"
+                        data-service="IT Consulting"
+                        data-description="Gain strategic insights and expert advice to elevate your IT infrastructure."
+                        data-long-description="Our IT consulting services are designed to help businesses navigate the complexities of the technology landscape. From strategy formulation to implementation, we provide actionable insights and hands-on support to transform your IT infrastructure into a powerful business enabler.">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-stack-line text-2xl"></i>
@@ -205,10 +212,11 @@
                             Gain strategic insights and expert advice to elevate your IT infrastructure.
                         </p>
                     </div>
-                    <!-- Service Card 4 -->
 
-                    <div
-                        class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card"
+                        data-service="Mobile App Development"
+                        data-description="Design and develop intuitive mobile applications for iOS and Android."
+                        data-long-description="We specialize in crafting user-friendly and feature-rich mobile applications. Our team ensures seamless integration, cross-platform compatibility, and engaging interfaces to deliver apps that resonate with your audience and achieve your business goals.">
                         <div
                             class="absolute -top-4 -left-4 bg-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-indigo-600">
                             <i class="ri-smartphone-line text-2xl"></i>
@@ -219,6 +227,7 @@
                         </p>
                     </div>
                 </div>
+
                 <div class="text-center mt-12">
                     <a href="service.html"
                         class="inline-block bg-indigo-500 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-indigo-600 transition-all duration-300 poppins-regular">
@@ -227,6 +236,21 @@
                 </div>
             </div>
         </section>
+
+
+
+        <!-- Popup Modal -->
+        <div id="service-popup"
+            class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50 px-5">
+            <div
+                class="relative bg-white rounded-lg shadow-xl p-8 max-w-lg w-full transition-transform duration-300 transform scale-95">
+                <button id="popup-close" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-xl">
+                    <i class="ri-close-line text-3xl"></i>
+                </button>
+                <h3 id="popup-title" class="text-2xl font-bold text-indigo-500 mb-4 poppins-regular">Service Title</h3>
+                <p id="popup-description" class="text-black poppins-regular">Service Description</p>
+            </div>
+        </div>
 
         <!-- counter section -->
         <section id="counter-section" class="bg-gray-800 text-white py-16 overflow-hidden">
@@ -521,10 +545,11 @@
                 </div>
                 <div class="tesitmonal_container gap-10 mt-10" data-aos="fade-up">
                     <div class="owl-carousel owl-theme w-full">
-                        <div class="item">
+                        <div class="item hover:scale-95 transition-transform duration-300">
                             <div
                                 class="testimonal_card h-60 bg-white rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
-                                <p class="text-black poppins-regular text-md">"The team at Aiims exceeded our expectations.
+                                <p class="text-black poppins-regular text-md">"The team at Aiims exceeded our
+                                    expectations.
                                     Their innovative solutions have helped our business thrive. Highly recommend!"</p>
                                 <div class="user_detail_container flex gap-5 mt-5 items-center">
                                     <img src="assets/img/01.png" alt="" class="!w-20">
@@ -536,7 +561,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item hover:scale-95 transition-transform duration-300">
                             <div
                                 class="testimonal_card h-60 bg-white rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
                                 <p class="text-black poppins-regular text-md">"Their support and expertise have been
@@ -551,10 +576,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item hover:scale-95 transition-transform duration-300">
                             <div
                                 class="testimonal_card h-60 bg-white rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
-                                <p class="text-black poppins-regular text-md">"The team at Aiims exceeded our expectations.
+                                <p class="text-black poppins-regular text-md">"The team at Aiims exceeded our
+                                    expectations.
                                     Their innovative solutions have helped our business thrive. Highly recommend!"</p>
                                 <div class="user_detail_container flex gap-5 mt-5 items-center">
                                     <img src="assets/img/03.png" alt="" class="!w-20">
@@ -566,7 +592,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item hover:scale-95 transition-transform duration-300">
                             <div
                                 class="testimonal_card h-60 bg-white rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
                                 <p class="text-black poppins-regular text-md">"Amazing team with outstanding technical
@@ -589,7 +615,8 @@
         </section>
 
         <!-- contact section -->
-        <section class="contact_section bg-gray-100 p-8 rounded-lg shadow-lg w-full flex flex-col items-center py-20 px-5 md:px-20 overflow-hidden">
+        <section
+            class="contact_section bg-gray-100 p-8 rounded-lg shadow-lg w-full flex flex-col items-center py-20 px-5 md:px-20 overflow-hidden">
             <div class="contact_wrapper w-full lg:w-2/3">
                 <!-- Company Information Section -->
                 <div class="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-5 items-center mb-8"
@@ -616,31 +643,37 @@
                             <label for="name" class="block poppins-regular text-gray-700 font-medium">Full Name</label>
                             <input type="text" id="name" name="name"
                                 class="w-full p-3 poppins-regular mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                            <p id="nameError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Name is required.</p>
+                            <p id="nameError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Name is required.
+                            </p>
                         </div>
-                    
+
                         <div class="col-span-2 md:col-span-1">
-                            <label for="email" class="block poppins-regular text-gray-700 font-medium">Email Address</label>
+                            <label for="email" class="block poppins-regular text-gray-700 font-medium">Email
+                                Address</label>
                             <input type="email" id="email" name="email"
                                 class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                            <p id="emailError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Please enter a valid email address.</p>
+                            <p id="emailError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Please enter a
+                                valid email address.</p>
                         </div>
-                    
+
                         <div class="col-span-2">
-                            <label for="phone" class="block poppins-regular text-gray-700 font-medium">Phone Number</label>
+                            <label for="phone" class="block poppins-regular text-gray-700 font-medium">Phone
+                                Number</label>
                             <input type="tel" id="phone" name="phone"
                                 class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 pattern="[0-9]{10}" />
-                            <p id="phoneError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Phone number must be 10 digits.</p>
+                            <p id="phoneError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Phone number
+                                must be 10 digits.</p>
                         </div>
-                    
+
                         <div class="col-span-2">
                             <label for="message" class="block poppins-regular text-gray-700 font-medium">Message</label>
                             <textarea id="message" name="message" rows="4"
                                 class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                            <p id="messageError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Message is required.</p>
+                            <p id="messageError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Message is
+                                required.</p>
                         </div>
-                    
+
                         <div class="col-span-2 mt-4">
                             <button type="submit"
                                 class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -648,7 +681,7 @@
                             </button>
                         </div>
                     </form>
-                    
+
                 </div>
             </div>
         </section>
@@ -660,7 +693,7 @@
                 <div class="grid grid-cols-6 gap-8">
                     <!-- Company Logo and Description -->
                     <div class="col-span-6 lg:col-span-2 flex flex-col items-center md:items-start">
-                        <img src="assets/img/aiims-new-logo.png" alt="Company Logo" class="w-60 mb-4" />
+                        <img src="assets/img/aiims-new-logo.png" alt="Company Logo" class="w-44 mb-4" />
                         <p class="text-gray-400 text-center md:text-left poppins-regular">
                             Aiims(Application Integration and Intelligent
                             Monitoring System) - Shaping the future of IT with innovative solutions and unparalleled
@@ -700,7 +733,8 @@
                 <!-- Social Media and Copyright -->
                 <div class="mt-8 border-t border-gray-700 pt-6 text-center lg:text-left lg:flex lg:justify-between">
                     <div>
-                        <p class="text-gray-400 poppins-regular">&copy; 2024 Aiims(Application Integration and Intelligent
+                        <p class="text-gray-400 poppins-regular">&copy; 2024 Aiims(Application Integration and
+                            Intelligent
                             Monitoring System). All rights reserved.</p>
                     </div>
                     <div class="flex justify-center lg:justify-end space-x-4 mt-5 lg:mt-0">
