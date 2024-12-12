@@ -36,44 +36,49 @@ close_menu.addEventListener("click", () => {
 
 
  // JavaScript for Service Popup
- const serviceCards = document.querySelectorAll('.service-card');
- const popup = document.getElementById('service-popup');
- const popupTitle = document.getElementById('popup-title');
- const popupDescription = document.getElementById('popup-description');
- const popupClose = document.getElementById('popup-close');
+const serviceCards = document.querySelectorAll('.service-card');
+const popup = document.getElementById('service-popup');
+const popupTitle = document.getElementById('popup-title');
+const popupDescription = document.getElementById('popup-description');
+const popupLink = document.getElementById('popup-link'); // Reference to the new button
+const popupClose = document.getElementById('popup-close');
 
- // Open Popup with dynamic content
- serviceCards.forEach(card => {
-   card.addEventListener('click', () => {
-     const service = card.dataset.service;
-     const description = card.dataset.description;
-     const longDescription = card.dataset.longDescription; // Get the detailed text
+// Open Popup with dynamic content
+serviceCards.forEach(card => {
+  card.addEventListener('click', () => {
+    const service = card.dataset.service;
+    const description = card.dataset.description;
+    const longDescription = card.dataset.longDescription; // Get the detailed text
+    const serviceLink = card.dataset.link; // Get the link from the data attribute
 
-     popupTitle.textContent = service;
-     popupDescription.innerHTML = `<p class=\"font-semibold\">${description}</p><p class=\"mt-4 text-gray-700\">${longDescription}</p>`; // Combine short and detailed text
+    popupTitle.textContent = service;
+    popupDescription.innerHTML = `<p class=\"font-semibold\">${description}</p><p class=\"mt-4 text-gray-700\">${longDescription}</p>`; // Combine short and detailed text
+    popupLink.href = serviceLink; // Dynamically update the button link
+    popupLink.textContent = `Explore ${service}`; // Update button text dynamically
 
-     popup.classList.remove('hidden');
-     popup.classList.add('flex');
-     popup.querySelector('.relative').classList.remove('scale-95');
-     popup.querySelector('.relative').classList.add('scale-100');
-   });
- });
+    popup.classList.remove('hidden');
+    popup.classList.add('flex');
+    popup.querySelector('.relative').classList.remove('scale-95');
+    popup.querySelector('.relative').classList.add('scale-100');
+  });
+});
 
- // Close Popup
- popupClose.addEventListener('click', () => closePopup());
+// Close Popup
+popupClose.addEventListener('click', () => closePopup());
 
- popup.addEventListener('click', (e) => {
-   if (e.target === popup) closePopup();
- });
+popup.addEventListener('click', (e) => {
+  if (e.target === popup) closePopup();
+});
 
- function closePopup() {
-   popup.querySelector('.relative').classList.add('scale-95');
-   popup.querySelector('.relative').classList.remove('scale-100');
-   setTimeout(() => {
-     popup.classList.add('hidden');
-     popup.classList.remove('flex');
-   }, 200);
- }
+function closePopup() {
+  popup.querySelector('.relative').classList.add('scale-95');
+  popup.querySelector('.relative').classList.remove('scale-100');
+  setTimeout(() => {
+    popup.classList.add('hidden');
+    popup.classList.remove('flex');
+  }, 200);
+}
+
 
 // Counter Animation Logic
 const counters = [
