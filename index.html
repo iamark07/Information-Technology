@@ -45,12 +45,8 @@
 
         <!-- Page Loader -->
         <div id="page-loader"
-            class="fixed inset-0 flex items-center justify-center bg-indigo-500 z-50 transition-opacity duration-500">
-            <div class="loader">
-                <div class="scanner">
-                    <span class="poppins-regular">Loading...</span>
-                </div>
-            </div>
+            class="fixed inset-0 flex items-center justify-center bg-gray-800 z-50 transition-opacity duration-500">
+            <img src="assets/img/Aiims-Logo__4.png" alt="" class="loader_animate w-24">
         </div>
 
         <!-- Header Section -->
@@ -593,7 +589,7 @@
         </section>
 
         <!-- contact section -->
-        <section class="bg-gray-100 p-8 rounded-lg shadow-lg w-full flex flex-col items-center py-20 px-5 md:px-20 overflow-hidden">
+        <section class="contact_section bg-gray-100 p-8 rounded-lg shadow-lg w-full flex flex-col items-center py-20 px-5 md:px-20 overflow-hidden">
             <div class="contact_wrapper w-full lg:w-2/3">
                 <!-- Company Information Section -->
                 <div class="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-5 items-center mb-8"
@@ -622,37 +618,37 @@
                                 class="w-full p-3 poppins-regular mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                             <p id="nameError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Name is required.</p>
                         </div>
-
+                    
                         <div class="col-span-2 md:col-span-1">
                             <label for="email" class="block poppins-regular text-gray-700 font-medium">Email Address</label>
                             <input type="email" id="email" name="email"
                                 class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                            <p id="emailError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Please enter a valid email
-                                address.
-                            </p>
+                            <p id="emailError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Please enter a valid email address.</p>
                         </div>
-
+                    
                         <div class="col-span-2">
                             <label for="phone" class="block poppins-regular text-gray-700 font-medium">Phone Number</label>
                             <input type="tel" id="phone" name="phone"
                                 class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 pattern="[0-9]{10}" />
-                            <p id="phoneError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Phone number must be 10 digits.
-                            </p>
+                            <p id="phoneError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Phone number must be 10 digits.</p>
                         </div>
-
+                    
                         <div class="col-span-2">
                             <label for="message" class="block poppins-regular text-gray-700 font-medium">Message</label>
                             <textarea id="message" name="message" rows="4"
                                 class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                            <p id="messageError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Message cannot be empty.</p>
+                            <p id="messageError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Message is required.</p>
                         </div>
-
-                        <div class="form_btn_wrapper">
+                    
+                        <div class="col-span-2 mt-4">
                             <button type="submit"
-                                class="bg-blue-500 poppins-regular text-white px-6 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Submit</button>
+                                class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                Submit
+                            </button>
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </section>

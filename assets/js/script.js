@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
         loader.remove(); // Remove from DOM after fade-out
 
         // Add .hero_animation class to the hero section content
-        const heroSectionContent = document.querySelector(".hero_section_content");
+        const heroSectionContent = document.querySelector(
+          ".hero_section_content"
+        );
         if (heroSectionContent) {
           heroSectionContent.classList.add("hero_animation");
         }
@@ -18,22 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
 // menu bar slide js function
 
-const menuBtn = document.getElementById('menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const close_menu = document.getElementById('close_menu');
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+const close_menu = document.getElementById("close_menu");
 
-menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('!left-0');
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("!left-0");
 });
 
-close_menu.addEventListener('click', () => {
-    mobileMenu.classList.toggle('!left-0');
+close_menu.addEventListener("click", () => {
+  mobileMenu.classList.toggle("!left-0");
 });
-
 
 // Counter Animation Logic
 const counters = [
@@ -65,9 +64,9 @@ const animateCounter = (id, target) => {
 const counterSection = document.getElementById("counter-section");
 const observer = new IntersectionObserver(
   (entries, observer) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        counters.forEach(counter =>
+        counters.forEach((counter) =>
           animateCounter(counter.id, counter.target)
         );
         observer.disconnect(); // Stop observing after animation starts
@@ -79,56 +78,59 @@ const observer = new IntersectionObserver(
 
 observer.observe(counterSection);
 
+// contact form vaidation
 
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault(); // Prevent form submission
 
+  // Clear previous error messages
+  document.getElementById('nameError').classList.add('hidden');
+  document.getElementById('emailError').classList.add('hidden');
+  document.getElementById('phoneError').classList.add('hidden');
+  document.getElementById('messageError').classList.add('hidden');
 
-// contact form vaidation 
+  // Get form field values
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const message = document.getElementById('message').value.trim();
 
-const form = document.getElementById('contactForm');
+  let valid = true;
 
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
+  // Validate Name
+  if (name.length < 3) {
+      document.getElementById('nameError').textContent = 'Name must be at least 3 characters.';
+      document.getElementById('nameError').classList.remove('hidden');
+      valid = false;
+  }
 
-            // Reset errors
-            document.querySelectorAll('.text-red-500').forEach(error => error.classList.add('hidden'));
+  // Validate Email
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (!emailPattern.test(email)) {
+      document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+      document.getElementById('emailError').classList.remove('hidden');
+      valid = false;
+  }
 
-            let valid = true;
+  // Validate Phone Number
+  const phonePattern = /^[0-9]{10}$/;
+  if (!phonePattern.test(phone)) {
+      document.getElementById('phoneError').textContent = 'Phone number must be 10 digits.';
+      document.getElementById('phoneError').classList.remove('hidden');
+      valid = false;
+  }
 
-            // Validate Name
-            const name = document.getElementById('name');
-            const nameError = document.getElementById('nameError');
-            if (!name.value.trim()) {
-                nameError.classList.remove('hidden');
-                valid = false;
-            }
+  // Validate Message
+  if (message.length === 0) {
+      document.getElementById('messageError').textContent = 'Message is required.';
+      document.getElementById('messageError').classList.remove('hidden');
+      valid = false;
+  }
 
-            // Validate Email
-            const email = document.getElementById('email');
-            const emailError = document.getElementById('emailError');
-            if (!email.value || !validator.isEmail(email.value)) {
-                emailError.classList.remove('hidden');
-                valid = false;
-            }
+  // If all validations pass, submit the form
+  if (valid) {
+      console.log('Form is valid. Submitting...');
+      this.submit();
+  }
+});
 
-            // Validate Phone
-            const phone = document.getElementById('phone');
-            const phoneError = document.getElementById('phoneError');
-            if (!phone.value.match(/^[0-9]{10}$/)) {
-                phoneError.classList.remove('hidden');
-                valid = false;
-            }
-
-            // Validate Message
-            const message = document.getElementById('message');
-            const messageError = document.getElementById('messageError');
-            if (!message.value.trim()) {
-                messageError.classList.remove('hidden');
-                valid = false;
-            }
-
-            // If the form is valid, submit it (you can add AJAX submission here)
-            if (valid) {
-                alert('Form submitted successfully!');
-                form.reset();
-            }
-        });
