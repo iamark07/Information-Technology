@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- scroll animation css cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- fav icon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/Aiims-Logo__3.png" />
+
+
+    <!-- rimix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- owl caraousel cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+    <title>Contact Us</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <main class="w-full ">
+
+        <!-- Page Loader -->
+        <div id="page-loader"
+            class="fixed inset-0 flex items-center justify-center bg-gray-800 z-50 transition-opacity duration-500">
+            <img src="assets/img/Aiims-Logo__4.png" alt="" class="loader_animate w-24">
+        </div>
+
+        <!-- Header Section -->
+        <header class="fixed top-0 left-0 z-40 transition-all duration-300 bg-none text-white py-3 px-5 lg:px-5 w-full">
+            <div class="header_container transition-all duration-300 flex justify-between py-3 w-full">
+                <!-- Logo -->
+                <div class="text-3xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
+                            alt="" class="w-32 md:w-44 lg:w-52 transition-all duration-300"></a></div>
+
+                <!-- Menu Button (For Mobile) -->
+                <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
+                    <i class="ri-menu-line text-3xl text-white"></i>
+                </button>
+
+                <!-- Navigation Links -->
+                <nav id="menu" class="hidden lg:flex gap-8 mt-3">
+                    <a href="index.html" class="hover:text-gray-300 text-lg poppins-regular">Home</a>
+                    <a href="about.html" class="hover:text-gray-300 text-lg poppins-regular">About</a>
+                    <a href="service.html"
+                        class="hover:text-gray-300 text-lg poppins-regular">Services</a>
+                    <a href="index.html#technology-section"
+                        class=" text-lg hover:text-gray-300 poppins-regular">Technology</a>
+                    <a href="contact.html" class="hover:text-[#f59b40] font-semibold text-[#f5ae40] text-lg poppins-regular">Contact</a>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="lg:hidden absolute top-0 -left-full h-[100dvh] w-full flex transition-all duration-300">
+                <nav class="py-4 px-7 h-full w-3/5 bg-gray-800 relative">
+                    <!-- Logo -->
+                    <div class="text-2xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
+                                alt="" class="w-32"></a></div>
+                    <ul class="!mt-10 flex flex-col gap-3">
+                        <li><a href="index.html" class="block hover:text-gray-300 text-lg poppins-regular">Home</a>
+                        </li>
+                        <li><a href="about.html" class="block hover:text-gray-300 text-lg poppins-regular">About</a>
+                        </li>
+                        <li><a href="service.html"
+                                class="block hover:text-gray-300 text-lg poppins-regular">Services</a>
+                        </li>
+                        <li><a href="index.html#technology-section"
+                                class="block hover:text-gray-300 text-lg poppins-regular">Technology</a></li>
+                        <li><a href="contact.html" class="block hover:text-[#f59b40] font-semibold text-[#f5ae40] text-lg poppins-regular">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="https://www.linkedin.com" target="_blank"
+                        class="inline-block hover:text-gray-300 absolute bottom-5"><i
+                            class="ri-linkedin-box-fill text-4xl"></i></a>
+                </nav>
+                <span class="inline-block h-full w-2/5" id="close_menu"></span>
+            </div>
+        </header>
+
+        <!-- hero section -->
+        <section class="hero_section relative w-full overflow-hidden">
+            <!-- hero bg videp -->
+            <video src="assets/video/bg-video-4.mp4" loop autoplay muted
+                class="-z-10 absolute top-0 left-0 w-full h-[100dvh] object-cover">
+            </video>
+            <!-- Dark Overlay -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
+            <div
+                class="hero_section_content transition-all duration-700 relative w-full h-[100dvh] flex flex-col items-center justify-center px-3">
+                <h1
+                    class="text-white text-4xl md:text-6xl poppins-regular text-center mt-32 transition-all duration-500 hover:scale-110">
+                    Connect with Us to Drive
+                    <br><span class="text-3xl sm:text-4xl md:text-5xl">IT Innovation</span>
+                </h1>
+                <p class="text-center w-full md:w-3/4 text-white text-lg mt-5 poppins-regular">Your gateway to cutting-edge technology solutions and unparalleled support in the digital era.</p>
+            </div>
+            <!-- External Links -->
+            <div class="absolute z-10 bottom-5 left-6 lg:left-10 flex gap-5">
+                <a href="https://www.linkedin.com" target="_blank" class="hover:text-gray-300"><i
+                        class="ri-linkedin-box-fill text-white text-4xl"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- contact section -->
+        <section
+            class="contact_section bg-gray-100 p-8 w-full flex flex-col items-center py-20 px-5 md:px-20 overflow-hidden">
+            <div class="contact_wrapper grid grid-cols-2 w-full gap-10">
+                <div class="col-span-2 lg:col-span-1">
+                    <!-- Company Information Section -->
+                    <div class="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-5 items-center mb-8"
+                        data-aos="fade-up">
+                        <div class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full">
+                            <i class="ri-information-line text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold poppins-regular text-gray-800 mb-2">Aiims Contact Address</h3>
+                            <p class="text-gray-600 mb-1 poppins-regular">
+                                <strong>Address:</strong> 1234 Tech Avenue, Silicon Valley, CA 94025, USA
+                            </p>
+                            <p class="text-gray-600 poppins-regular">
+                                <strong>Phone:</strong> +1 (800) 123-4567
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Google Map Section -->
+                    <div class="map_section mb-8" data-aos="fade-up">
+                        <iframe class="w-full h-64 md:h-96 rounded-lg shadow-md"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.54095243991!2d77.04382210146656!3d28.52725231428008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1734079756843!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-span-2 lg:col-span-1">
+                    <!-- Contact Form Section -->
+                    <div class="bg-white p-8 rounded-lg shadow-md w-full" data-aos="fade-up">
+                        <h2 class="text-3xl font-bold poppins-regular text-center mb-6 text-gray-700">Contact Us</h2>
+                        <form id="contact-page-Form" class="grid grid-cols-2 gap-5">
+                            <div class="col-span-2 md:col-span-1">
+                                <label for="name" class="block poppins-regular text-gray-700 font-medium">Full
+                                    Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full p-3 poppins-regular mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                <p id="nameError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Name is
+                                    required.
+                                </p>
+                            </div>
+
+                            <div class="col-span-2 md:col-span-1">
+                                <label for="email" class="block poppins-regular text-gray-700 font-medium">Email
+                                    Address</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                <p id="emailError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Please enter
+                                    a
+                                    valid email address.</p>
+                            </div>
+
+                            <div class="col-span-2">
+                                <label for="phone" class="block poppins-regular text-gray-700 font-medium">Phone
+                                    Number</label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    pattern="[0-9]{10}" />
+                                <p id="phoneError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Phone number
+                                    must be 10 digits.</p>
+                            </div>
+
+                            <div class="col-span-2">
+                                <label for="message"
+                                    class="block poppins-regular text-gray-700 font-medium">Message</label>
+                                <textarea id="message" name="message" rows="4"
+                                    class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                                <p id="messageError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Message is
+                                    required.</p>
+                            </div>
+
+                            <div class="col-span-2 mt-4">
+                                <button type="submit"
+                                    class="bg-[#f5ae40] text-white px-6 py-2 rounded-lg hover:bg-[#f59b40]">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer section -->
+        <footer class="bg-gray-800 text-white mt-20 pt-10 pb-5 px-5 lg:px-10 overflow-hidden">
+            <div class="container_wrapper mx-auto px-4">
+                <!-- Footer Content -->
+                <div class="grid grid-cols-6 gap-8">
+                    <!-- Company Logo and Description -->
+                    <div class="col-span-6 lg:col-span-2 flex flex-col items-center md:items-start">
+                        <img src="assets/img/aiims-new-logo.png" alt="Company Logo" class="w-44 mb-4" />
+                        <p class="text-gray-400 text-center md:text-left poppins-regular">
+                            Aiims(Application Integration and Intelligent
+                            Monitoring System) - Shaping the future of IT with innovative solutions and unparalleled
+                            expertise.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                        <h3
+                            class="text-lg font-bold mb-4 poppins-regular border-b-2 pb-1 inline-block border-[#f5ae40]">
+                            Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-400 hover:text-white poppins-regular">Home</a>
+                            </li>
+                            <li><a href="about.html" class="text-gray-400 hover:text-white poppins-regular">About Us</a>
+                            </li>
+                            <li><a href="service.html"
+                                    class="text-gray-400 hover:text-white poppins-regular">Services</a></li>
+                            <li><a href="contact.html"
+                                    class="text-gray-400 hover:text-white poppins-regular">Contact</a></li>
+                            <li><a href="index.html#technology-section"
+                                    class="text-gray-400 hover:text-white poppins-regular">Technology</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                        <h3
+                            class="text-lg font-bold mb-4 poppins-regular border-b-2 pb-1 inline-block border-[#f5ae40]">
+                            Contact Information</h3>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400 poppins-regular">
+                                <i class="ri-map-pin-line text-[#f5ae40]"></i> 1234 Tech Avenue, Silicon Valley, CA
+                                94025
+                            </li>
+                            <li class="text-gray-400 poppins-regular">
+                                <i class="ri-phone-line text-[#f5ae40]"></i> +1 (800) 123-4567
+                            </li>
+                            <li class="text-gray-400 poppins-regular">
+                                <i class="ri-mail-line text-[#f5ae40]"></i> contact@webglow.com
+                            </li>
+                        </ul>
+                        <div class="flex space-x-4 mt-7">
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-facebook-fill text-2xl"></i></a>
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-instagram-fill text-2xl"></i></a>
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-twitter-fill text-2xl"></i></a>
+                            <a href="#"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-linkedin-fill text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media and Copyright -->
+                <div class="mt-8 border-t border-gray-700 pt-6 text-center flex justify-center">
+                    <div>
+                        <p class="text-gray-400 poppins-regular text-center">&copy; 2024 <span
+                                class="!text-[#f5ae40]">Aiims(Application Integration and Intelligent
+                                Monitoring System)</span> All rights reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </main>
+
+    <script src="assets/js/script.js"></script>
+
+    <!-- for smooth scroll  -->
+    <!-- <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script> -->
+
+    <!-- owl caraousel cdn links -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+    <!-- scroll animation script link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 700,
+        }
+        );
+
+        // // Initialize Lenis
+        // const lenis = new Lenis();
+
+        // // Use requestAnimationFrame to continuously update the scroll
+        // function raf(time) {
+        //     lenis.raf(time);
+        //     requestAnimationFrame(raf);
+        // }
+
+        // requestAnimationFrame(raf);
+
+        // testimonal card slider functions
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: false,
+            mouseDrag: true,
+            touchDrag: true,
+            dotsEach: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+
+            }
+        });
+
+
+        // contact form vaidation
+
+        document.getElementById('contact-page-Form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form submission
+
+            // Clear previous error messages
+            document.getElementById('nameError').classList.add('hidden');
+            document.getElementById('emailError').classList.add('hidden');
+            document.getElementById('phoneError').classList.add('hidden');
+            document.getElementById('messageError').classList.add('hidden');
+
+            // Get form field values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            let valid = true;
+
+            // Validate Name
+            if (name.length < 3) {
+                document.getElementById('nameError').textContent = 'Name must be at least 3 characters.';
+                document.getElementById('nameError').classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Email
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+                document.getElementById('emailError').classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Phone Number
+            const phonePattern = /^[0-9]{10}$/;
+            if (!phonePattern.test(phone)) {
+                document.getElementById('phoneError').textContent = 'Phone number must be 10 digits.';
+                document.getElementById('phoneError').classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Message
+            if (message.length === 0) {
+                document.getElementById('messageError').textContent = 'Message is required.';
+                document.getElementById('messageError').classList.remove('hidden');
+                valid = false;
+            }
+
+            // If all validations pass, submit the form
+            if (valid) {
+                console.log('Form is valid. Submitting...');
+                this.submit();
+            }
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
